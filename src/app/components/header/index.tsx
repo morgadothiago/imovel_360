@@ -13,32 +13,34 @@ export default function Header() {
   }
 
   return (
-    <div className="w-full bg-[#D4CCBF]">
-      <div className="container mx-auto w-full flex flex-row sm:flex-row justify-between items-center p-3">
-        <div className="flex items-center gap-2 mb-2 sm:mb-0">
+    <div className="w-full bg-[#D4CCBF] shadow-md">
+      <div className="container mx-auto flex flex-row sm:flex-row justify-between items-center p-4">
+        <div className="flex items-center gap-4 mb-2 sm:mb-0">
           <Image
             src={LogoImovel360}
             alt="Imovel360"
-            width={50}
-            className="h-auto"
+            width={60}
+            className="h-auto rounded-full border-2 border-[#087B82] shadow-lg"
           />
           <DropdownMenu />
         </div>
-        <div className="flex flex-row items-center sm:flex-row">
+        <div className="flex flex-col sm:flex-row items-center">
           <Phone
-            width={27}
-            height={27}
+            width={30}
+            height={30}
             className="text-[#087B82] mb-1 sm:mb-0"
           />
-          <div className="flex flex-col text-left sm:text-left">
-            <h1 className="text-xs sm:text-sm">Ligue agora</h1>
+          <div className="flex flex-col text-center sm:text-center ml-2">
+            <h1 className="text-sm font-semibold text-[#087B82]">
+              Ligue agora
+            </h1>
             <button
-              className="text-xs text-[#087B82]  font-bold  sm:text-sm"
+              className="text-sm text-[#087B82] font-bold hover:underline"
               onClick={handleWhatApp}
             >
-              (11) 92200-52992
+              (11) 92005-2992
             </button>
-            <p className="text-xs">algumemail@gmail.com</p>
+            <p className="text-xs text-gray-600">algumemail@gmail.com</p>
           </div>
         </div>
       </div>
