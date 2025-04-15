@@ -32,22 +32,22 @@ export default function page() {
                 de elevação), essenciais para arquitetos, engenheiros e outros
                 profissionais construírem com exatidão e segurança.
               </p>
-              <p className="text-justify mb-6">
-                <ul className="list-none pl-5 mb-6">
-                  <li>
-                    ✅ Evita invasão de limites – Previne conflitos com vizinhos
-                    e problemas judiciais.
-                  </li>
-                  <li>
-                    ✅ Garante um terreno nivelado – Assegura uma base estável
-                    para a construção.
-                  </li>
-                  <li>
-                    ✅ Custo-benefício vantajoso – Investimento que evita
-                    retrabalhos, multas e prejuízos futuros.
-                  </li>
-                </ul>
-              </p>
+
+              <ul className="list-none pl-5 mb-6">
+                <li>
+                  ✅ Evita invasão de limites – Previne conflitos com vizinhos e
+                  problemas judiciais.
+                </li>
+                <li>
+                  ✅ Garante um terreno nivelado – Assegura uma base estável
+                  para a construção.
+                </li>
+                <li>
+                  ✅ Custo-benefício vantajoso – Investimento que evita
+                  retrabalhos, multas e prejuízos futuros.
+                </li>
+              </ul>
+
               <p className="text-justify mb-6">
                 Não deixe para depois! Conte com a Imóvel360 e fique livre de
                 preocupações. Um levantamento topográfico bem executado é a base
