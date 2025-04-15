@@ -14,8 +14,8 @@ export default function Header() {
 
   return (
     <div className="w-full bg-[#D4CCBF]">
-      <div className="container mx-auto  w-full  flex justify-between items-center p-3">
-        <div className="flex items-center gap-2">
+      <div className="container mx-auto w-full flex flex-col sm:flex-row justify-between items-center p-3">
+        <div className="flex items-center gap-2 mb-2 sm:mb-0">
           <Image
             src={LogoImovel360}
             alt="Imovel360"
@@ -24,12 +24,16 @@ export default function Header() {
           />
           <DropdownMenu />
         </div>
-        <div className="flex  items-center">
-          <Phone width={27} height={27} className="text-[#087B82]" />
-          <div className="ml-2 flex-row">
-            <h1 className="text-sm">Ligue agora</h1>
+        <div className="flex flex-col items-center sm:flex-row">
+          <Phone
+            width={27}
+            height={27}
+            className="text-[#087B82] mb-1 sm:mb-0"
+          />
+          <div className="flex flex-col text-center sm:text-left">
+            <h1 className="text-xs sm:text-sm">Ligue agora</h1>
             <button
-              className="text-xs text-[#087B82] font-bold text-2xl"
+              className="text-xs text-[#087B82] font-bold text-lg sm:text-2xl"
               onClick={handleWhatApp}
             >
               (11) 92200-52992
