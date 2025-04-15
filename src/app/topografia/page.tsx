@@ -20,7 +20,7 @@ export default function page() {
           </div>
           <div className="bg-white sm:p-6 rounded-lg  md:w-[80%] p-3">
             <h1 className="text-[#087B82] text-2xl md:text-3xl font-bold mb-4">
-              Regularização de Imóveis
+              Levantamento Topográfico
             </h1>
             <div className="px-4">
               <p className="text-justify mb-6">
