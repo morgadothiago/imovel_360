@@ -8,7 +8,7 @@ export default function Home() {
     <div className="">
       <Header />
       <main className="flex flex-col items-center ">
-        <div className="relative w-full max-w-1xl  rounded-lg shadow-lg overflow-hidden ">
+        <div className="relative w-full max-w-1xl overflow-hidden ">
           <div className="bg-black">
             <Image
               src={RegulamentaImg}
@@ -16,7 +16,7 @@ export default function Home() {
               className="object-cover w-full h-64 md:h-80 opacity-50"
             />
           </div>
-          <div className="bg-white p-6 rounded-lg shadow-md md:w-[80%]">
+          <div className="bg-white sm:p-6 rounded-lg  md:w-[80%] p-3">
             <h1 className="text-[#087B82] text-2xl md:text-3xl font-bold mb-4">
               Regularização de Imóveis
             </h1>
