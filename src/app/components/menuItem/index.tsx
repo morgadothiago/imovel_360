@@ -26,11 +26,11 @@ export default function DropdownMenu() {
   }, []);
 
   return (
-    <div className="sm:relative inline-block text-left" ref={menuRef}>
-      <div className="flex items-center justify-center">
+    <div className="relative inline-block" ref={menuRef}>
+      <div className="flex items-center justify-between mb-2">
         <button
           onClick={toggleMenu}
-          className="inline-flex justify-center items-end mx-auto rounded-md px-2 py-1 bg-transparent text-[16px] text-[#087B82] font-bold md:text-xl md:px-6 md:py-3"
+          className="flex items-center w-full bg-[#D4CCBF] text-[#087B82] font-bold text-sm py-2 p-1 rounded-lg shadow-md hover:bg-[#c2b09e] transition duration-200 ease-in-out"
         >
           Acessar todos os nossos serviços
           <svg
@@ -50,37 +50,37 @@ export default function DropdownMenu() {
       </div>
 
       {isOpen && (
-        <div className="absolute right-0 z-10 w-full rounded-lg bg-[#D4CCBF] mt-26 md:mt-4">
+        <div className="absolute right-0 z-10 w-full rounded-lg bg-white shadow-lg mt-2">
           <div
-            className="py-2 bg-[#D4CCBF] rounded-2xl w-full"
+            className="py-2 rounded-2xl w-full"
             role="menu"
             aria-orientation="vertical"
             aria-labelledby="options-menu"
           >
             <Link
               href="/topografia"
-              className="block font-bold px-6 py-3 text-lg text-[#087b81] hover:bg-gray-200 transition duration-200 ease-in-out"
+              className="block font-bold px-4 py-2 text-base text-[#087b81] hover:bg-[#f0f0f0] transition duration-200 ease-in-out rounded-lg"
               role="menuitem"
             >
               Levantamento Topográfico
             </Link>
             <Link
               href="/avaliacao"
-              className="block font-bold px-6 py-3 text-lg text-[#087b81] hover:bg-gray-200 transition duration-200 ease-in-out"
+              className="block font-bold px-4 py-2 text-base text-[#087b81] hover:bg-[#f0f0f0] transition duration-200 ease-in-out rounded-lg"
               role="menuitem"
             >
               Avaliação de Imóveis
             </Link>
             <Link
               href="/Moveis"
-              className="block font-bold px-6 py-3 text-lg text-[#087b81] hover:bg-gray-200 transition duration-200 ease-in-out"
+              className="block font-bold px-4 py-2 text-base text-[#087b81] hover:bg-[#f0f0f0] transition duration-200 ease-in-out rounded-lg"
               role="menuitem"
             >
               Móveis Planejados
             </Link>
             <Link
               href="/obras"
-              className="block font-bold px-6 py-3 text-lg text-[#087b81] hover:bg-gray-200 transition duration-200 ease-in-out"
+              className="block font-bold px-4 py-2 text-base text-[#087b81] hover:bg-[#f0f0f0] transition duration-200 ease-in-out rounded-lg"
               role="menuitem"
             >
               Acompanhamento de Obras
