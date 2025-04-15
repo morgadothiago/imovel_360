@@ -13,7 +13,7 @@ export default function Home() {
             <Image
               src={RegulamentaImg}
               alt="regulamentação"
-              className="object-cover w-full h-64 md:h-80 opacity-50"
+              className="object-cover w-full h-94 md:h-80 opacity-50"
             />
           </div>
           <div className="bg-white sm:p-6 rounded-lg  md:w-[80%] p-3">

@@ -72,7 +72,7 @@ export default function DropdownMenu() {
               Avaliação de Imóveis
             </Link>
             <Link
-              href="/Moveis"
+              href="/moveis"
               className="block font-bold px-4 py-2 text-base text-[#087b81] hover:bg-[#f0f0f0] transition duration-200 ease-in-out rounded-lg"
               role="menuitem"
             >
