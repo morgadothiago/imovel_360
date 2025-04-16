@@ -6,6 +6,7 @@ import React from "react";
 import LogoImovel360 from "../../../../public/logo 1.png";
 import DropdownMenu from "../menuItem";
 import { Phone } from "lucide-react";
+import Link from "next/link";
 
 export default function Header() {
   function handleWhatApp() {
@@ -16,12 +17,14 @@ export default function Header() {
     <div className="w-full bg-[#D4CCBF] shadow-md">
       <div className="container mx-auto flex flex-row sm:flex-row justify-between items-center p-4">
         <div className="flex items-center gap-4 mb-2 sm:mb-0">
-          <Image
-            src={LogoImovel360}
-            alt="Imovel360"
-            width={60}
-            className="h-auto rounded-full border-2 border-[#087B82] shadow-lg"
-          />
+          <Link href="/">
+            <Image
+              src={LogoImovel360}
+              alt="Imovel360"
+              width={60}
+              className="h-auto rounded-full border-2 border-[#087B82] shadow-lg"
+            />
+          </Link>
           <DropdownMenu />
         </div>
         <div className="flex flex-col sm:flex-row items-center">
