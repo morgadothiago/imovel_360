@@ -22,15 +22,15 @@ export default function page() {
             <h1 className="text-[#087B82] text-2xl md:text-3xl font-bold mb-4">
               Acompanhamento de obra
             </h1>
-            <div className="px-4 flex flex-col gap-10 ">
-              <p className="text-justify mb-6 font-semibold text-lg">
+            <div className="px-4 flex flex-col gap-6 sm:gap-8 md:gap-10">
+              <p className="text-justify mb-4 sm:mb-6 font-semibold text-base sm:text-lg">
                 O acompanhamento de obras vai além de uma simples fiscalização
                 das atividades. Na realidade, ele desempenha um papel essencial
                 para evitar imprevistos durante a execução do projeto,
                 assegurando que o progresso esteja de acordo com o cronograma e
                 o orçamento definidos no planejamento.
               </p>
-              <p className="font-bold text-lg mb-4">
+              <p className="font-bold text-base sm:text-lg mb-3 sm:mb-4">
                 Com o projeto e as documentações em mãos solicitamos a devida
                 RRT na prefeitura e iniciamos a supervisão em obra. Veja os
                 benefícios:
