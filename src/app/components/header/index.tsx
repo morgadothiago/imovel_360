@@ -1,52 +1,76 @@
 "use client";
 
 import Image from "next/image";
-import React from "react";
-
+import React, { useState } from "react";
 import LogoImovel360 from "../../../../public/logo 1.png";
-import DropdownMenu from "../menuItem";
-import { Phone } from "lucide-react";
+import {  Menu, X } from "lucide-react";
 import Link from "next/link";
 
 export default function Header() {
-  function handleWhatApp() {
-    alert("app");
-  }
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+
+
+  const menuItems = [
+    { label: "Início", href: "/" },
+    { label: "Imóveis", href: "/imoveis" },
+    { label: "Sobre Nós", href: "/sobre" },
+    { label: "Contato", href: "/contato" },
+  ];
 
   return (
     <div className="w-full bg-[#D4CCBF] shadow-md">
-      <div className="container mx-auto flex flex-row sm:flex-row justify-between items-center p-4">
-        <div className="flex items-center gap-4 mb-2 sm:mb-0">
+      <div className="container  w-full mx-auto justify-between flex flex-row items-center p-4">
+        <div className="flex  items-center gap-4 flex-1">
           <Link href="/">
             <Image
               src={LogoImovel360}
               alt="Imovel360"
-              width={60}
-              className="h-auto rounded-full border-2 border-[#087B82] shadow-lg"
+              width={100}
+              className="h-auto "
             />
           </Link>
-          <DropdownMenu />
+          
+          {/* Menu para Desktop */}
+          <nav className="hidden md:flex gap-6 items-end md:justify-end">
+            {menuItems.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="text-[#087B82] hover:text-[#065c61] font-medium"
+              >
+                {item.label}
+              </Link>
+            ))}
+          </nav>
         </div>
-        <div className="flex flex-col sm:flex-row items-center">
-          <Phone
-            width={30}
-            height={30}
-            className="text-[#087B82] mb-1 sm:mb-0"
-          />
-          <div className="flex flex-col text-center sm:text-center ml-2">
-            <h1 className="text-sm font-semibold text-[#087B82]">
-              Ligue agora
-            </h1>
-            <button
-              className="text-sm text-[#087B82] font-bold hover:underline"
-              onClick={handleWhatApp}
-            >
-              (11) 92005-2992
-            </button>
-            <p className="text-xs text-gray-600">algumemail@gmail.com</p>
-          </div>
-        </div>
+
+        {/* Botão do Menu Mobile */}
+        <button
+          className="md:hidden text-[#087B82] ml-auto"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+        >
+          {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+        </button>
       </div>
+
+      {/* Menu Mobile */}
+      {isMenuOpen && (
+        <div className="md:hidden bg-[#D4CCBF] border-t border-[#087B82]/20">
+          <nav className="container mx-auto py-4">
+            {menuItems.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="block py-2 px-4 text-[#087B82] hover:bg-[#087B82]/10"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                {item.label}
+              </Link>
+            ))}
+          </nav>
+        </div>
+      )}
     </div>
   );
 }
