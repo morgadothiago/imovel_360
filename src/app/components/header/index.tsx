@@ -9,30 +9,29 @@ import Link from "next/link";
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-
-
   const menuItems = [
-    { label: "Início", href: "/" },
-    { label: "Imóveis", href: "/imoveis" },
-    { label: "Sobre Nós", href: "/sobre" },
-    { label: "Contato", href: "/contato" },
+    { label: "Home", href: "/" },
+    { label: "topologia", href: "/topologia" },
+    { label: "moveis planejados", href: "/moveis" },
+    { label: "Avaliação de imoveis", href: "/avaliacao" },
+    { label: "Acompanhamento de obras", href: "/obras" },
   ];
 
   return (
     <div className="w-full bg-[#D4CCBF] shadow-md">
-      <div className="container  w-full mx-auto justify-between flex flex-row items-center p-4">
-        <div className="flex  items-center gap-4 flex-1">
+      <div className="container w-full mx-auto justify-between flex flex-row items-center p-4">
+        <div className="flex items-center gap-4 flex-1">
           <Link href="/">
             <Image
               src={LogoImovel360}
               alt="Imovel360"
               width={100}
-              className="h-auto "
+              className="h-auto"
             />
           </Link>
           
           {/* Menu para Desktop */}
-          <nav className="hidden md:flex gap-6 items-end md:justify-end">
+          <nav className="hidden md:flex w-full gap-6 md:items-end md:justify-end">
             {menuItems.map((item) => (
               <Link
                 key={item.href}
@@ -62,7 +61,7 @@ export default function Header() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="block py-2 px-4 text-[#087B82] hover:bg-[#087B82]/10"
+                className="text-[#087B82] hover:text-[#065c61] font-medium block py-2 px-4"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {item.label}
