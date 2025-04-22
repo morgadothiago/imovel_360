@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../components/header";
 
-import TopografigaImg from "@/app/assets/moveis.png";
+import MoveisImg from "@/app/assets/moveis.png";
 import Image from "next/image";
 
 export default function page() {
@@ -13,7 +13,7 @@ export default function page() {
         <div className="relative w-full max-w-1xl overflow-hidden ">
           <div className="">
             <Image
-              src={TopografigaImg}
+              src={MoveisImg}
               alt="regulamentação"
               className="object-cover w-full h-94 md:h-80 "
             />

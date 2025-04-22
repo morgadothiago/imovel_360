@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../components/header";
 
-import TopografigaImg from "@/app/assets/Frame 3.png";
+import TopografigaImg from "@/app/assets/topo.png";
 import Image from "next/image";
 
 export default function page() {
