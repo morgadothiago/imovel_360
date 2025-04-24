@@ -20,22 +20,14 @@ export default function page() {
           </div>
           <div className="bg-white sm:p-6 rounded-lg  md:w-[80%] p-3">
             <h1 className="text-[#087B82] text-2xl md:text-3xl font-bold mb-4">
-              Regularização de Imóveis
+              Móveis Planejados: Conheça as Vantagens de um Ambiente Personalizado
             </h1>
             <div className="px-4">
               <p className="text-justify mb-6">
-                Regularizar um imóvel é assegurar que ele cumpra todas as
-                exigências legais, evitando multas, transtornos e valorizando
-                seu patrimônio. Seja para vender, financiar ou simplesmente ter
-                a tranquilidade de um documento em dia, a regularização é
-                essencial para todo proprietário consciente.
+                Os móveis planejados são a solução ideal para quem busca otimizar espaço, combinar funcionalidade com estilo e transformar ambientes com elegância. Projetados sob medida, eles oferecem inúmeras vantagens, desde melhor aproveitamento de áreas até um visual sofisticado e harmonioso.
               </p>
               <p className="text-justify mb-6">
-                Com a Imóvel360, você conta com um serviço especializado em
-                regularização imobiliária, desde a análise de documentos até a
-                emissão dos registros necessários. Nossa equipe garante que seu
-                imóvel, urbano ou rural, esteja 100% dentro da lei,
-                proporcionando segurança jurídica e valorização no mercado.
+              Principais Benefícios dos Móveis Planejados
               </p>
               <p className="text-justify mb-6">
                 Invista na legalidade do seu imóvel e evite preocupações no

@@ -11,7 +11,7 @@ export default function Header() {
 
   const menuItems = [
     { label: "Home", href: "/" },
-    { label: "topologia", href: "/topologia" },
+    { label: "topografia", href: "/topografia" },
     { label: "moveis planejados", href: "/moveis" },
     { label: "Avaliação de imoveis", href: "/avaliacao" },
     { label: "Acompanhamento de obras", href: "/obras" },
