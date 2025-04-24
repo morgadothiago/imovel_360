@@ -126,7 +126,7 @@ export default function Home() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto place-items-center">
           {/* Card 1 - Regularização */}
           <div className="bg-white rounded-xl shadow-lg p-6 transform hover:shadow-xl transition-all duration-300 border-l-4 border-[#087B82] group w-full max-w-sm">
-            <a href="/regulamentacao" className="block">
+            <a href="/regularizacao" className="block">
               <h2 className="text-xl font-semibold text-[#087B82] mb-4 group-hover:text-[#065c61] transition-colors text-center">Regularização de Imóveis</h2>
               <p className="text-gray-600 mb-4 text-center">Regularize seu imóvel com segurança e tranquilidade</p>
               <div className="flex items-center text-[#087B82] group-hover:text-[#065c61] justify-center">
