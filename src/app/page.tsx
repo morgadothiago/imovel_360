@@ -1,13 +1,13 @@
 'use client'
 import Image from "next/image";
-import Header from "./components/header";
+
 import { useState, useEffect } from "react";
 import RegulamentaImg from "@/app/assets/employee-working-project-side-view.jpg";
 import Topolog from "@/app/assets/topo.png";
 import moveisPlanejadoimg from "@/app/assets/moveis.png";
 import obras from "@/app/assets/obra.png";
 import avaliacao from "@/app/assets/avaliacao.png";
-import Footer from "./components/Footer";
+
 
 export default function Home() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -50,7 +50,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <Header />
+     
       
       {/* Carousel Section */}
       <div className="flex justify-center items-center w-full">
@@ -284,7 +284,7 @@ export default function Home() {
           </form>
         </div>
       </div>
-      <Footer />
+     
     </div>
   );
 }
