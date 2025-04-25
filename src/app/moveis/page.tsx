@@ -1,13 +1,13 @@
 'use client'
 import React from "react";
-import Header from "../components/header";
+
 import MoveisImg from "@/app/assets/moveis.png";
 import Image from "next/image";
 
 export default function MoveisPage() {
   return (
     <div className="min-h-screen bg-gray-50">
-      <Header />
+     
 
       {/* Hero Section */}
       <div className="relative h-[400px] lg:h-[500px] w-full">

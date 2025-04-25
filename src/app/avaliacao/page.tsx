@@ -1,13 +1,12 @@
 'use client'
 import React from "react";
-import Header from "../components/header";
+
 import Image from "next/image";
 import avaliacao from "@/app/assets/avaliacao.png";
 
 export default function AvaliacaoPage() {
   return (
     <div className="min-h-screen bg-gray-50">
-      <Header />
 
       {/* Hero Section */}
       <div className="relative h-[400px] lg:h-[500px] w-full">

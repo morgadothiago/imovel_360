@@ -1,14 +1,12 @@
 'use client'
 import React from "react";
-import Header from "../components/header";
+
 import TopografigaImg from "@/app/assets/topo.png";
 import Image from "next/image";
 
 export default function Topografia() {
   return (
     <div className="min-h-screen bg-gray-50">
-      <Header />
-
       {/* Hero Section */}
       <div className="relative h-[400px] lg:h-[500px] w-full">
         <Image
