@@ -33,8 +33,7 @@ export default function Footer() {
               </span>
             </h2>
             <p className="text-gray-700 text-lg leading-relaxed mb-6">
-              Soluções completas para suas necessidades imobiliárias. 
-              Qualidade e profissionalismo em cada projeto.
+              Soluções completas para seu imóvel.
             </p>
             <div className="flex items-center space-x-2 text-sm text-gray-600">
               <span>⭐</span>
