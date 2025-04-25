@@ -7,6 +7,7 @@ import Topolog from "@/app/assets/topo.png";
 import moveisPlanejadoimg from "@/app/assets/moveis.png";
 import obras from "@/app/assets/obra.png";
 import avaliacao from "@/app/assets/avaliacao.png";
+import Footer from "./components/Footer";
 
 export default function Home() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -195,6 +196,8 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      <Footer />
     </div>
   );
 }

@@ -1,8 +1,7 @@
 "use client";
 
-import Image from "next/image";
 import React, { useState } from "react";
-import LogoImovel360 from "../../../../public/logo 1.png";
+
 import {  Menu, X } from "lucide-react";
 import Link from "next/link";
 
@@ -11,9 +10,9 @@ export default function Header() {
 
   const menuItems = [
     { label: "Home", href: "/" },
-    { label: "regularização de imoveis", href: "/regularizacao" },
-    { label: "topografia", href: "/topografia" },
-    { label: "moveis planejados", href: "/moveis" },
+    { label: "Regularização de imoveis", href: "/regularizacao" },
+    { label: "Topografia", href: "/topografia" },
+    { label: "Móveis planejados", href: "/moveis" },
     { label: "Avaliação de imoveis", href: "/avaliacao" },
     { label: "Acompanhamento de obras", href: "/obras" },
   ];
@@ -22,13 +21,10 @@ export default function Header() {
     <div className="w-full bg-[#D4CCBF] shadow-md">
       <div className="container w-full mx-auto justify-between flex flex-row items-center p-4">
         <div className="flex items-center gap-4 flex-1">
-          <Link href="/">
-            <Image
-              src={LogoImovel360}
-              alt="Imovel360"
-              width={100}
-              className="h-auto"
-            />
+          <Link href="/" className="flex items-center">
+            <span className="text-[#087B82] text-2xl font-bold tracking-tight">
+              Imóvel<span className="text-[#065c61]">360</span>
+            </span>
           </Link>
           
           {/* Menu para Desktop */}
