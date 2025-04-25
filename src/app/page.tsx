@@ -7,6 +7,7 @@ import Topolog from "@/app/assets/topo.png";
 import moveisPlanejadoimg from "@/app/assets/moveis.png";
 import obras from "@/app/assets/obra.png";
 import avaliacao from "@/app/assets/avaliacao.png";
+import projetoarquitetonico from '@/app/assets/projetoarquitetonico.jpg'
 
 
 export default function Home() {
@@ -39,9 +40,9 @@ export default function Home() {
       description: "Supervisão especializada do início ao fim"
     },
     {
-      image: obras,
+      image: projetoarquitetonico,
       title: "Elaboração de projeto arquitetônico",
-      description: "Transforme suas ideias em projetos únicos com nossa equipe especializada em arquitetura"
+      description: "Transforme suas ideias em projetos únicos com nossos  arquitetos"
     }
   ];
 
@@ -129,92 +130,26 @@ export default function Home() {
           <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-[#087B82] mt-4"></span>
         </h1>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto place-items-center">
-          {/* Card 1 - Regularização */}
-          <div className="bg-white rounded-xl shadow-lg p-6 transform hover:shadow-xl transition-all duration-300 border-l-4 border-[#087B82] group w-full max-w-sm">
-            <a href="/regularizacao" className="block">
-              <h2 className="text-xl font-semibold text-[#087B82] mb-4 group-hover:text-[#065c61] transition-colors text-center">Regularização de imoveis</h2>
-              <p className="text-gray-600 mb-4 text-center">Garanta a documentação legal do seu imóvel com nossa assessoria especializada em regularização</p>
-              <div className="flex items-center text-[#087B82] group-hover:text-[#065c61] justify-center">
-                <span>Saiba mais</span>
-                <svg className="w-5 h-5 ml-2 transform group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"/>
-                </svg>
-              </div>
-            </a>
-          </div>
-
-          {/* Card 2 - Avaliação */}
-          <div className="bg-white rounded-xl shadow-lg p-6 transform hover:shadow-xl transition-all duration-300 border-l-4 border-[#087B82] group w-full max-w-sm">
-            <a href="/avaliacao" className="block">
-              <h2 className="text-xl font-semibold text-[#087B82] mb-4 group-hover:text-[#065c61] transition-colors text-center">Avaliação de Imóveis</h2>
-              <p className="text-gray-600 mb-4 text-center">Avaliações precisas e profissionais para seu imóvel</p>
-              <div className="flex items-center text-[#087B82] group-hover:text-[#065c61] justify-center">
-                <span>Saiba mais</span>
-                <svg className="w-5 h-5 ml-2 transform group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"/>
-                </svg>
-              </div>
-            </a>
-          </div>
-
-          {/* Card 3 - Móveis */}
-          <div className="bg-white rounded-xl shadow-lg p-6 transform hover:shadow-xl transition-all duration-300 border-l-4 border-[#087B82] group w-full max-w-sm">
-            <a href="/moveis" className="block">
-              <h2 className="text-xl font-semibold text-[#087B82] mb-4 group-hover:text-[#065c61] transition-colors text-center">Móveis Planejados</h2>
-              <p className="text-gray-600 mb-4 text-center">Móveis sob medida para seu espaço</p>
-              <div className="flex items-center text-[#087B82] group-hover:text-[#065c61] justify-center">
-                <span>Saiba mais</span>
-                <svg className="w-5 h-5 ml-2 transform group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"/>
-                </svg>
-              </div>
-            </a>
-          </div>
-
-          {/* Card 4 - Obras */}
-          <div className="bg-white  rounded-xl shadow-lg p-6 transform hover:shadow-xl transition-all duration-300 border-l-4 border-[#087B82] md:ml-[60%] group w-full max-w-sm lg:col-start-1 lg:col-span-1">
-            <a href="/obras" className="block">
-              <h2 className="text-xl font-semibold text-[#087B82] mb-4 group-hover:text-[#065c61] transition-colors text-center">Acompanhamento de Obras</h2>
-              <p className="text-gray-600 mb-4 text-center">Supervisão completa do início ao fim</p>
-              <div className="flex items-center text-[#087B82] group-hover:text-[#065c61] justify-center">
-                <span>Saiba mais</span>
-                <svg className="w-5 h-5 ml-2 transform group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"/>
-                </svg>
-              </div>
-            </a>
-          </div>
-
-          {/* Card 5 - Topografia */}
-          <div className="bg-white rounded-xl shadow-lg p-6 transform hover:shadow-xl transition-all duration-300 border-l-4 border-[#087B82] group w-full max-w-sm lg:col-start-2 lg:col-span-2">
-            <a href="/topografia" className="block">
-              <h2 className="text-xl font-semibold text-[#087B82] mb-4 group-hover:text-[#065c61] transition-colors text-center">Levantamento Topográfico</h2>
-              <p className="text-gray-600 mb-4 text-center">Medições precisas para seu terreno</p>
-              <div className="flex items-center text-[#087B82] group-hover:text-[#065c61] justify-center">
-                <span>Saiba mais</span>
-                <svg className="w-5 h-5 ml-2 transform group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"/>
-                </svg>
-              </div>
-            </a>
-          </div>
-
-          {/* Card 6 - Projeto Arquitetônico */}
-          <div className="bg-white rounded-xl shadow-lg p-6 transform hover:shadow-xl transition-all duration-300 border-l-4 border-[#087B82] group w-full max-w-sm lg:col-start-2 lg:col-span-2">
-            <a href="/projeto-arquitetonico" className="block">
-              <h2 className="text-xl font-semibold text-[#087B82] mb-4 group-hover:text-[#065c61] transition-colors text-center">Elaboração de Projeto Arquitetônico</h2>
-              <p className="text-gray-600 mb-4 text-center">Transforme suas ideias em projetos únicos com nossa equipe especializada em arquitetura</p>
-              <div className="flex items-center text-[#087B82] group-hover:text-[#065c61] justify-center">
-                <span>Saiba mais</span>
-                <svg className="w-5 h-5 ml-2 transform group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"/>
-                </svg>
-              </div>
-            </a>
-          </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          {slides.map((service, index) => (
+            <div key={index} className="bg-white rounded-xl shadow-lg p-6 transform hover:shadow-xl transition-all duration-300 border-l-4 border-[#087B82] group h-full">
+              <a href={`/${service.title.toLowerCase().replace(/\s+/g, '-')}`} className="block h-full flex flex-col">
+                <h2 className="text-xl font-semibold text-[#087B82] mb-4 group-hover:text-[#065c61] transition-colors text-center">
+                  {service.title}
+                </h2>
+                <p className="text-gray-600 mb-4 text-center flex-grow">
+                  {service.description}
+                </p>
+                <div className="flex items-center text-[#087B82] group-hover:text-[#065c61] justify-center mt-auto">
+                  <span>Saiba mais</span>
+                  <svg className="w-5 h-5 ml-2 transform group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"/>
+                  </svg>
+                </div>
+              </a>
+            </div>
+          ))}
         </div>
-        
       </div>
 
       {/* Formulário de Contato */}
