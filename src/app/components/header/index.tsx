@@ -15,6 +15,7 @@ export default function Header() {
     { label: "Móveis planejados", href: "/moveis" },
     { label: "Avaliação de imóveis", href: "/avaliacao" },
     { label: "Acompanhamento de Obras", href: "/obras" },
+    { label: "Elaboração de projeto arquitetônico", href: "/elaboracao" },
   ];
 
   return (
