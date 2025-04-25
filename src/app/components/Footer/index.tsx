@@ -127,7 +127,7 @@ export default function Footer() {
             </ul>
 
             {/* Redes Sociais */}
-            <div className="mt-8">
+            {/* <div className="mt-8">
               <h4 className="text-lg font-semibold mb-4 relative after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-8 after:h-1 after:bg-[#087B82] after:rounded-full">
                 Conecte-se conosco
               </h4>
@@ -153,7 +153,7 @@ export default function Footer() {
                   </svg>
                 </a>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
 
