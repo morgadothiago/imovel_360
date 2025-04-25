@@ -11,10 +11,10 @@ export default function Header() {
   const menuItems = [
     { label: "Home", href: "/" },
     { label: "Regularização de imoveis", href: "/regularizacao" },
-    { label: "Topografia", href: "/topografia" },
+    { label: "Levantamento Topográfico", href: "/topografia" },
     { label: "Móveis planejados", href: "/moveis" },
     { label: "Avaliação de imoveis", href: "/avaliacao" },
-    { label: "Acompanhamento de obras", href: "/obras" },
+    { label: "Acompanhamento de Obras", href: "/obras" },
   ];
 
   return (
