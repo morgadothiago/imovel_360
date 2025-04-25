@@ -15,8 +15,8 @@ export default function Home() {
   const slides = [
     {
       image: RegulamentaImg,
-      title: "Encontre seu Imóvel Ideal",
-      description: "Soluções completas para suas necessidades imobiliárias"
+      title: "Regularização de Imóveis",
+      description: "Regularize seu imóvel com segurança e tranquilidade"
     },
     {
       image: Topolog,
