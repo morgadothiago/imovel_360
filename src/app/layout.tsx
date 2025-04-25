@@ -3,6 +3,8 @@ import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Footer from "./components/Footer";
+import Header from "./components/header";
 
 const geistSans = Inter({
   variable: "--font-geist-sans",
@@ -30,8 +32,10 @@ export default function RootLayout({
         suppressHydrationWarning
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+         <Header />
         {children}
         <Analytics />
+        <Footer />
       </body>
     </html>
   );
