@@ -41,7 +41,7 @@ export default function Home() {
     },
     {
       image: projetoarquitetonico,
-      title: "Elaboração de projeto arquitetônico",
+      title: "Elaboração de Projeto Executivo",
       description: "Transforme suas ideias em projetos únicos com nossos  arquitetos"
     }
   ];

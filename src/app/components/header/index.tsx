@@ -15,7 +15,7 @@ export default function Header() {
     { label: "Móveis planejados", href: "/moveis" },
     { label: "Avaliação de imóveis", href: "/avaliacao" },
     { label: "Acompanhamento de Obras", href: "/obras" },
-    { label: "Elaboração de projeto arquitetônico", href: "/elaboracao" },
+    { label: "Elaboração de Projeto Executivo", href: "/projetosarquitetonicos" },
   ];
 
   return (
@@ -34,9 +34,10 @@ export default function Header() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="text-[#087B82] hover:text-[#065c61] font-medium"
+                className="text-[#087B82] hover:text-[#065c61] font-medium text-sm lg:text-base whitespace-nowrap transition-all duration-300 relative group"
               >
                 {item.label}
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#087B82] group-hover:w-full transition-all duration-300"></span>
               </Link>
             ))}
           </nav>
@@ -53,13 +54,13 @@ export default function Header() {
 
       {/* Menu Mobile */}
       {isMenuOpen && (
-        <div className="md:hidden bg-[#D4CCBF] border-t border-[#087B82]/20">
+        <div className="md:hidden bg-[#D4CCBF] border-t border-[#087B82]/20 md:text-sm">
           <nav className="container mx-auto py-4">
             {menuItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className="text-[#087B82] hover:text-[#065c61] font-medium block py-2 px-4"
+                className="text-[#087B82] hover:text-[#065c61] font-medium block py-2 px-4 text-sm]"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {item.label}
