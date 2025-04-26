@@ -33,7 +33,7 @@ export default function ProjetoArquitetonico() {
             <h2 className="text-[#087B82] text-3xl font-bold mb-6">Por que investir em um Projeto Arquitetônico?</h2>
             <p className="text-gray-700 text-lg leading-relaxed mb-6">
               Um projeto arquitetônico bem elaborado é o primeiro passo para transformar seu sonho em realidade. 
-              Nossa equipe especializada desenvolve projetos personalizados que combinam estética, funcionalidade 
+              Nossos especializada desenvolve projetos personalizados que combinam estética, funcionalidade 
               e sustentabilidade, garantindo que cada detalhe seja pensado para atender suas necessidades específicas 
               e otimizar o uso do espaço disponível.
             </p>
