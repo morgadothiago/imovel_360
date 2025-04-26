@@ -17,9 +17,9 @@ export default function ProjetoArquitetonico() {
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80 flex items-center justify-center">
           <div className="text-center text-white px-4">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">Elaboração de Projeto Executivo</h1>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">Elaboração Projetos Arquitetônicos</h1>
             <p className="text-xl md:text-2xl opacity-90 max-w-3xl mx-auto">
-            Transforme suas ideias em projetos únicos com nossos  arquitetos
+              Transforme suas ideias em projetos únicos e funcionais
             </p>
           </div>
         </div>
